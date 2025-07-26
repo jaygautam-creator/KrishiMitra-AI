@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌱 KrishiMitra AI
 
 Free, open-source crop recommendation system using Machine Learning and weather data to help Indian farmers choose the most suitable and profitable crops.
@@ -90,3 +91,94 @@ The app will open in your browser at [http://localhost:8501](http://localhost:85
 ## 👩‍💻 Author
 
 [Jay Gautam](https://github.com/jaygautam-creator)
+=======
+# KrishiMitra AI 🌾
+
+An intelligent crop recommendation system for Indian farmers that helps them choose the most suitable and profitable crops based on their location, land size, and budget.
+
+## Features 🚀
+
+- **Smart Crop Recommendations** based on:
+  - Location (PIN code/GPS)
+  - Land area
+  - Budget constraints
+- **Detailed Analysis** for each recommended crop:
+  - Expected Return on Investment (ROI)
+  - Crop resilience score
+  - Optimal sowing window
+  - Weather-based insights
+
+## Tech Stack 💻
+
+- **Frontend**: Streamlit
+- **Backend**: Python
+- **ML Models**: scikit-learn, XGBoost
+- **Data Sources**:
+  - OpenWeatherMap API (weather data)
+  - Soil Health Card (ICAR)
+  - AgMarkNet (market prices)
+  - ICRISAT/FAO (yield data)
+
+## Installation 🛠️
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/krishiMitraAI.git
+   cd krishiMitraAI
+   ```
+
+2. Create a virtual environment:
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Set up environment variables:
+
+   - Create a `.env` file
+   - Add your OpenWeatherMap API key:
+     ```
+     OPENWEATHERMAP_API_KEY=your_api_key_here
+     ```
+
+5. Run the application:
+   ```bash
+   streamlit run app/app.py
+   ```
+
+## Project Structure 📁
+
+```
+KrishiMitra-AI/
+├── app/
+│   ├── app.py                  # Streamlit frontend
+│   ├── recommendation.py       # Crop recommendation engine
+│   └── data_preprocessing.py   # Data preprocessing pipeline
+├── requirements.txt            # Project dependencies
+└── README.md                  # Project documentation
+```
+
+## Contributing 🤝
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License 📄
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Future Improvements 🔮
+
+- Multi-language support (Hindi, Marathi, Telugu, etc.)
+- Integration with IoT soil sensors
+- Mobile app development
+- Real-time market price integration
+- Community features for farmers
+>>>>>>> b2cf3db (Initial commit: KrishiMitra AI application with comprehensive farmer interface)
